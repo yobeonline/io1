@@ -1,10 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
 
-option(
-	IO1_MONEY "Add the io1::money library"
-	ON
-)
-
 project(
 	io1
 	VERSION 0.1.0
@@ -12,12 +7,6 @@ project(
 	HOMEPAGE_URL "https://github.com/yobeonline/io1"
 	LANGUAGES CXX
 )
-
-set(IO1_WITH_TESTS "OFF")
-
-if(IO1_MONEY)
-  add_subdirectory(money)
-endif()
 
 include(CMakePackageConfigHelpers)
 write_basic_package_version_file(
