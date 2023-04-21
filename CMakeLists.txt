@@ -13,6 +13,8 @@ project(
 	LANGUAGES CXX
 )
 
+set(IO1_WITH_TESTS "OFF")
+
 if(IO1_MONEY)
   add_subdirectory(money)
 endif()
