@@ -8,6 +8,7 @@ project(
 	LANGUAGES CXX
 )
 
+include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 write_basic_package_version_file(
   "${PROJECT_NAME}ConfigVersion.cmake"
